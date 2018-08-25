@@ -1,0 +1,60 @@
+/* this is the main div */
+.main{
+  width: 320px;
+  height: 110px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* row one div */
+.AA {
+  background-color: red;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+}
+.AB {
+  background-color: black;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+}
+.AC {
+  background-color: green;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+}
+/* start of row 2 div */
+.BA {
+  background-color: purple;
+  height: 50px;
+  width: 100px;
+  display:inline-block;
+  float: left;
+  margin: 1px
+  
+}
+.BB {
+  background-color: blue;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+}
+.BC {
+  background-color: brown;
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  margin: 1px;
+}

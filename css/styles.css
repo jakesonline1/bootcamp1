@@ -16,7 +16,7 @@ body {
     width: 50px;
     margin: 3px;
 }
-ul {
+.nav-links {
     float: right;
     margin: 0 auto;
     height: 60px;
@@ -53,3 +53,4 @@ footer {
     bottom: 0;
     left: 0;
     background-color: rgb(43, 24, 17);
+}

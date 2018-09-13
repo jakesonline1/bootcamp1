@@ -2,6 +2,7 @@ body {
     margin: 0 auto;
     background-color:rgb(183, 147, 118);
 }
+/* navigation bar styles */
 .nav-bar {
      /* background: linear-gradient(to bottom, #236AB9 0%, #091034 70%); */
      /* background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); */
@@ -36,6 +37,7 @@ body {
 .list-item a:hover {
     color:rgb(183, 147, 118);
 }
+/* home page styles */
 .banner {
     background-image: url('../images/welcomebanner.jpeg');
     background-size: cover;
@@ -74,7 +76,9 @@ body {
     padding: 15px;
 
 }
+/* footer styles */
 footer {
+    position: static;
     height: 60px;
     width: 100%;
     margin-top: 290px;
@@ -96,6 +100,7 @@ footer {
 .copyrightwrite {
     color: white;
 }
+/* contact styles */
 .fab {
     color: #1DA1F3;
 }
@@ -105,4 +110,53 @@ footer {
 }
 .contact-form {
     
+}
+/* about styles */
+.aboutbox {
+    width: 98%;
+    height: 1000px;
+    position: relative;
+    text-align: center;
+    margin-left: 1.5%;
+}
+.abt {
+    width: 33%;
+    height: 999px;
+    border: 3px solid white;
+    position: absolute;
+    margin-top: 100px;
+}
+.col1 {
+    left: 0;
+    top: 0;
+}
+.col2 {
+    left: 33%;
+    top: 0;
+}
+.abtvidbox {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.21%;
+    margin-top: 25px;
+    
+}
+
+.abtvideo {
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    left: 2%;
+    border: 3px solid rgb(43, 24, 17);
+
+}
+.col3 {
+    left: 66%;
+    top: 0;
+}
+.abtimg {
+    margin-top: 75px;
+    border: 3px solid rgb(43, 24, 17);
+    width: 350px;
+    height: 230px;
 }

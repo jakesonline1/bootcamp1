@@ -1,33 +1,35 @@
 body {
     margin: 0 auto;
-    background-color:rgb(183, 147, 118);
+    background-color:white;
 }
 /* navigation bar styles */
 .nav-bar {
      /* background: linear-gradient(to bottom, #236AB9 0%, #091034 70%); */
      /* background: linear-gradient(to bottom, rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); */
-     background: rgb(43, 24, 17);
-     height: 60px;
+     background: black;
+     height: 100px;
      width: 100%;
      color: white; 
-    
+     position: fixed;
+     top: 0%;
+     z-index: 500;
 }
 .nav-logo {
-    height: 54px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     margin: 3px;
 }
 .nav-links {
     float: right;
     margin: 0 auto;
-    height: 60px;
+    height: 100px;
     list-style-type: none;
     
 }
 .list-item {
     display: inline-block;
-    margin-top: 8px;
-    padding: 15px;
+    margin-top: 21px;
+    padding: 20px;
     
 }
 .list-item a {
@@ -39,15 +41,64 @@ body {
 }
 /* home page styles */
 .banner {
-    background-image: url('../images/welcomebanner.jpeg');
+    background-image: url('../images/championhome.jpg');
     background-size: cover;
     background-position: center;
-    height: 490px;
-    width: 90%;
+    height: 1000px;
+    width: 100%;
     margin: auto;
-    border: solid;
-    border-color:white;
-    margin-top: 150px;
+    margin-top: 97px;
+    /* transform: skew(0, -10deg) translateY(-165px) */
+}
+/* opening text animation styles */
+.openingtext1 {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    
+}
+.openingtext1 span {
+    text-transform: uppercase;
+    display: block;
+}
+.ot1 {
+    color: rgba(233, 15, 15, 0.8);
+    -webkit-text-stroke: .7px #f0f0f0;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0);
+    position: relative;
+    animation: text 3s 1;
+}
+.ot2 {
+    font-size: 30px;
+    color: white;
+}
+@keyframes text {
+    0% {
+        color:black;
+        margin-top: -40px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85% {
+        letter-spacing: 8px;
+        margin-top: -40px;
+    }
+}
+.joinbox {
+    width: 200px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: inline-block; 
 }
 
 .container {
@@ -56,45 +107,115 @@ body {
 }
 .column-one {
     width: 49%;
-    border: 3px solid white;
     float: left;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 10px;
 }
 .col-img {
     margin-left: 135px;
+    width: 500px;
+    height: 500px;
 }
 .column-two {
     width: 49%;
-    border: 3px solid white;
     float: right;
     margin-top: 50px;
     margin-right: 10px;
     font-family: 'Song Myung', serif;
 }
+.c2h {
+    text-align: center;
+}
 .col-text {
     padding: 15px;
 
 }
+/* 3rd section of homepage */
+.container2 {
+    background-image: url('../images/liftingweights.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px; 
+    position: absolute;
+}
+.textbox3 {
+    width:1500px;
+    height: 75px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 15%;
+    margin-top: 225px;
+    
+}
+div.containbox {
+    /* position: absolute; */
+    color: white;
+    text-align: center;
+    float: left;
+    left: 35%;
+    width: 225px; 
+    height: 60px;
+    background-color:rgba(43, 24, 17, 0);
+    margin: 30px;
+    border: 5px solid white;
+    border-radius: 25px;
+    padding-top: 15px;
+    font-size: 30px;
+    transition: height 2s;
+    overflow: hidden;
+}
+.containbox:hover {
+    height: 383px;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.word1234 {
+    color:rgba(233, 15, 15,1);
+    font-size: 40px;
+     -webkit-text-stroke: .2px #f0f0f0;
+}
 /* footer styles */
 footer {
-    position: static;
-    height: 60px;
+    position: fixed;
+    height: 80px;
     width: 100%;
     margin-top: 290px;
-    bottom: 0;
+    bottom: 0%;
     left: 0;
-    background-color: rgb(43, 24, 17);
+    background-color: rgba(0, 0, 0, 1);
 }
 .footer-col {
-    width: 33%;
-    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+.footer-col1 {
+    width: 100%;
+    height: 40px;
     display:inline-block;
+    position: absolute;
+    text-align: center;
+}
+.copyright {
+    float: right;
+    margin-top: 40px;
+}
+.footer-left {
+    float: right;
+    right: 0%;
+    top: 40%;
+
 }
 .footer-right {
-    float: right;
+    /* top: 95%;
+    left: 84%; */
+  justify-content: center;
+  margin-top: 2px;
 }
 .button {
+    position: inherit;
     clear: right;
 }
 .copyrightwrite {
@@ -103,10 +224,14 @@ footer {
 /* contact styles */
 .fab {
     color: #1DA1F3;
+    height: 20px;
+    width: 20px;
 }
 .map {
     overflow: hidden;
     text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 .contact-form {
     
@@ -147,7 +272,7 @@ footer {
     width: 95%;
     height: 100%;
     left: 2%;
-    border: 3px solid rgb(43, 24, 17);
+    border: 5px solid rgb(43, 24, 17);
 
 }
 .col3 {
@@ -156,7 +281,25 @@ footer {
 }
 .abtimg {
     margin-top: 75px;
-    border: 3px solid rgb(43, 24, 17);
+    border: 5px solid rgb(43, 24, 17);
     width: 350px;
     height: 230px;
+}
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+.aboutlorem {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    
+}
+.fixer {
+    padding-bottom: 100px;
 }
